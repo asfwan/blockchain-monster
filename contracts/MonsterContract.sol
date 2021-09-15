@@ -28,12 +28,7 @@ contract MonsterContract {
         "Rattataa"
     ];
 
-    string[] public elementTypes = [
-        "Grass",
-        "Fire",
-        "Water",
-        "Electric"
-    ];
+    enum ElementType{ GRASS, FIRE, WATER, ELECTRIC }
 
     constructor () public {
         for(uint i = 0 ; i < monsterNames.length ; i++){
