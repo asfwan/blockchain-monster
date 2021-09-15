@@ -8,7 +8,7 @@ contract MonsterContract {
         uint age;
 
         // common stats
-        uint elementType;
+        ElementType elementType;
         uint level;
 
         // extended stats
@@ -16,8 +16,8 @@ contract MonsterContract {
         uint defense;
         uint agility;
         uint dexterity;
-        uint[3] strengths;
-        uint[3] weaknesses;
+        ElementType[3] strengths;
+        ElementType[3] weaknesses;
     }
 
     // Read/write monsters
@@ -46,14 +46,15 @@ contract MonsterContract {
     }
 
     function addMonster (string memory _name) private {
-        uint[3] memory strengths = [uint(ElementType.WATER), uint(ElementType.EARTH), uint(ElementType.VOID)];
-        uint[3] memory weaknesses;//[ElementType.EARTH];
+        ElementType elementType = ElementType.ELECTRIC;
+        ElementType[3] memory strengths = [(ElementType.WATER), (ElementType.EARTH), (ElementType.VOID)];
+        ElementType[3] memory weaknesses = getWeaknesses(elementType);
         monsters[monstersCount ++] = 
             Monster(
                 monstersCount,          // id
                 _name,                   // name
                 0,                      // age
-                uint(ElementType.ELECTRIC),   // elementType
+                elementType,   // elementType
                 1,                      // level
                 11,                     // attack
                 6,                      // defense
@@ -62,5 +63,21 @@ contract MonsterContract {
                 strengths,              // strengths
                 weaknesses              // weaknesses
             );
+    }
+
+    function getWeaknesses (ElementType elementType) private returns (ElementType[3] memory) {
+        if(elementType == ElementType.FIRE){
+            return [ElementType.WATER, ElementType.EARTH, ElementType.VOID];
+        }else if(elementType == ElementType.WATER){
+            return [ElementType.ELECTRIC, ElementType.GRASS, ElementType.VOID];
+        }else if(elementType == ElementType.GRASS){
+            return [ElementType.FIRE, ElementType.EARTH, ElementType.VOID];
+        }else if(elementType == ElementType.EARTH){
+            return [ElementType.WATER, ElementType.GRASS, ElementType.VOID];
+        }else if(elementType == ElementType.ELECTRIC){
+            return [ElementType.EARTH, ElementType.VOID, ElementType.VOID];
+        }else{
+            return [ElementType.VOID, ElementType.VOID, ElementType.VOID];
+        }
     }
 }
