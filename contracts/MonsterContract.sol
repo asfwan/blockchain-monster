@@ -18,14 +18,14 @@ contract MonsterContract {
     uint public monstersCount;
 
     string[] public monsterNames = [
-        "Bulbasaur",
-        "Charmander",
-        "Squirtle",
-        "Pikachu",
-        "Caterpie",
-        "Weedle",
-        "Pidgey",
-        "Rattata"
+        "Bulbasaura",
+        "Charmandera",
+        "Squirtlea",
+        "Pikachua",
+        "Caterpiea",
+        "Weedlea",
+        "Pidgeya",
+        "Rattataa"
     ];
 
     string[] public elementTypes = [
