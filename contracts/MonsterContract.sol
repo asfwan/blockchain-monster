@@ -46,7 +46,6 @@ contract MonsterContract {
     }
 
     function addMonster (string memory _name) private {
-        Stats memory stats;
         monsters[monstersCount ++] = Monster(monstersCount, _name, 0, ElementType.ELECTRIC, stats);
     }
 }
