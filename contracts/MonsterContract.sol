@@ -7,8 +7,17 @@ contract MonsterContract {
         string name;
         uint age;
 
-        // stats
+        // common stats
         uint elementType;
+        uint level;
+
+        // extended stats
+        uint attack;
+        uint defense;
+        uint agility;
+        uint dexterity;
+        uint[] strengths;
+        uint[] weaknesses;
     }
 
     // Read/write monsters
