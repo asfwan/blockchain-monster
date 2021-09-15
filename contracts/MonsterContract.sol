@@ -46,11 +46,7 @@ contract MonsterContract {
     }
 
     function addMonster (string memory _name) private {
-        monsters[monstersCount ++] = Monster(monstersCount, _name, 0, elementTypes[random() % elementTypes.length]);
-    }
-
-    function random() private view returns (uint) {
-        // sha3 and now have been deprecated
-        return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, ['a'])));
+        Stats memory stats;
+        monsters[monstersCount ++] = Monster(monstersCount, _name, 0, ElementType.ELECTRIC, stats);
     }
 }
