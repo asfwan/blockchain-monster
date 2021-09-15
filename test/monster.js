@@ -1,6 +1,6 @@
-var Monster = artifacts.require("./Monster.sol");
+var Monster = artifacts.require("./MonsterContract.sol");
 
-contract("Monster", function(accounts) {
+contract("MonsterContract", function(accounts) {
   var monsterInstance;
 
   it("initializes with eight monsters", function() {

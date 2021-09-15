@@ -1,0 +1,2010 @@
+{
+  "contractName": "Monster",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "monsterNames",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "monsters",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "age",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "monstersCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"monsterNames\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"monsters\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"age\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"monstersCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Monster.sol\":\"Monster\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Monster.sol\":{\"keccak256\":\"0x18e3a3403b71f90fb532a8fde395323370ecd101be5b0f1a229bf47e3a8e92c0\",\"urls\":[\"bzz-raw://e4e32d3fd3afe3ba942ba716136f4e60e5a9f6b2974af5382810f897f94d094b\",\"dweb:/ipfs/QmNhMztEaUuqLRtsZp72hYfLxCGk4UmL5Jijk1fdmVyeFW\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518061010001604052806040518060400160405280600981526020017f42756c626173617572000000000000000000000000000000000000000000000081525081526020016040518060400160405280600a81526020017f436861726d616e6465720000000000000000000000000000000000000000000081525081526020016040518060400160405280600881526020017f5371756972746c6500000000000000000000000000000000000000000000000081525081526020016040518060400160405280600781526020017f50696b616368750000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600881526020017f436174657270696500000000000000000000000000000000000000000000000081525081526020016040518060400160405280600681526020017f576565646c65000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600681526020017f506964676579000000000000000000000000000000000000000000000000000081525081526020016040518060400160405280600781526020017f526174746174610000000000000000000000000000000000000000000000000081525081525060029060086101f6929190610363565b5034801561020357600080fd5b5060008090505b6002805490508110156102e2576102d56002828154811061022757fe5b906000526020600020018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102c55780601f1061029a576101008083540402835291602001916102c5565b820191906000526020600020905b8154815290600101906020018083116102a857829003601f168201915b50505050506102e860201b60201c565b808060010191505061020a565b506104dc565b60016000815480929190600101919050555060405180606001604052806001548152602001828152602001600081525060008060015481526020019081526020016000206000820151816000015560208201518160010190805190602001906103529291906103c3565b506040820151816002015590505050565b8280548282559060005260206000209081019282156103b2579160200282015b828111156103b15782518290805190602001906103a19291906103c3565b5091602001919060010190610383565b5b5090506103bf9190610443565b5090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061040457805160ff1916838001178555610432565b82800160010185558215610432579182015b82811115610431578251825591602001919060010190610416565b5b50905061043f919061046f565b5090565b61046c91905b80821115610468576000818161045f9190610494565b50600101610449565b5090565b90565b61049191905b8082111561048d576000816000905550600101610475565b5090565b90565b50805460018160011615610100020316600290046000825580601f106104ba57506104d9565b601f0160209004906000526020600020908101906104d8919061046f565b5b50565b610376806104eb6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80636368f5b31461004657806387e0712e146100ed578063c0576b731461010b575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506101c0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100b2578082015181840152602081019050610097565b50505050905090810190601f1680156100df5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f5610279565b6040518082815260200191505060405180910390f35b6101376004803603602081101561012157600080fd5b810190808035906020019092919050505061027f565b6040518084815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610183578082015181840152602081019050610168565b50505050905090810190601f1680156101b05780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b600281815481106101cd57fe5b906000526020600020016000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102715780601f1061024657610100808354040283529160200191610271565b820191906000526020600020905b81548152906001019060200180831161025457829003601f168201915b505050505081565b60015481565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103315780601f1061030657610100808354040283529160200191610331565b820191906000526020600020905b81548152906001019060200180831161031457829003601f168201915b505050505090806002015490508356fea265627a7a72315820678b0b716641511ca1af256e175914bf7a8b6dfeeed39cba5289f4e95349989c64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80636368f5b31461004657806387e0712e146100ed578063c0576b731461010b575b600080fd5b6100726004803603602081101561005c57600080fd5b81019080803590602001909291905050506101c0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100b2578082015181840152602081019050610097565b50505050905090810190601f1680156100df5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100f5610279565b6040518082815260200191505060405180910390f35b6101376004803603602081101561012157600080fd5b810190808035906020019092919050505061027f565b6040518084815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b83811015610183578082015181840152602081019050610168565b50505050905090810190601f1680156101b05780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b600281815481106101cd57fe5b906000526020600020016000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102715780601f1061024657610100808354040283529160200191610271565b820191906000526020600020905b81548152906001019060200180831161025457829003601f168201915b505050505081565b60015481565b6000602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103315780601f1061030657610100808354040283529160200191610331565b820191906000526020600020905b81548152906001019060200180831161031457829003601f168201915b505050505090806002015490508356fea265627a7a72315820678b0b716641511ca1af256e175914bf7a8b6dfeeed39cba5289f4e95349989c64736f6c63430005100032",
+  "sourceMap": "34:761:0:-;;;298:194;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;499:137;8:9:-1;5:2;;;30:1;27;20:12;5:2;499:137:0;535:6;544:1;535:10;;531:99;552:12;:19;;;;548:1;:23;531:99;;;592:27;603:12;616:1;603:15;;;;;;;;;;;;;;;592:27;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:10;;;:27;;:::i;:::-;574:3;;;;;;;531:99;;;;34:761;;642:151;702:13;;:16;;;;;;;;;;;;;754:32;;;;;;;;762:13;;754:32;;;;777:5;754:32;;;;784:1;754:32;;;728:8;:23;737:13;;728:23;;;;;;;;;;;:58;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;642:151;:::o;34:761::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "34:761:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:761:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;298:194;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;298:194:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;298:194:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;266:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;191:40;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;191:40:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;191:40:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;298:194;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;266:25::-;;;;:::o;191:40::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22 <0.8.0;\n\ncontract Monster {\n    // Model a Monster\n    struct Monster {\n        uint id;\n        string name;\n        uint age;\n    }\n\n    // Read/write monsters\n    mapping(uint => Monster) public monsters;\n\n    // Store Monsters Count\n    uint public monstersCount;\n\n    string[] public monsterNames = [\n        \"Bulbasaur\",\n        \"Charmander\",\n        \"Squirtle\",\n        \"Pikachu\",\n        \"Caterpie\",\n        \"Weedle\",\n        \"Pidgey\",\n        \"Rattata\"\n    ];\n\n    constructor () public {\n        for(uint i = 0 ; i < monsterNames.length ; i++){\n            addMonster(monsterNames[i]);\n        }\n    }\n\n    function addMonster (string memory _name) private {\n        monstersCount ++;\n        monsters[monstersCount] = Monster(monstersCount, _name, 0);\n    }\n}",
+  "sourcePath": "/Users/asfwan/Workspaces/workspace-blockchain/election/contracts/Monster.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Monster.sol",
+    "exportedSymbols": {
+      "Monster": [
+        69
+      ]
+    },
+    "id": 70,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 69,
+        "linearizedBaseContracts": [
+          69
+        ],
+        "name": "Monster",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Monster.Monster",
+            "id": 8,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "105:7:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "105:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "122:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "122:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 7,
+                "name": "age",
+                "nodeType": "VariableDeclaration",
+                "scope": 8,
+                "src": "143:8:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 6,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "143:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Monster",
+            "nodeType": "StructDefinition",
+            "scope": 69,
+            "src": "80:78:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "monsters",
+            "nodeType": "VariableDeclaration",
+            "scope": 69,
+            "src": "191:40:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Monster_$8_storage_$",
+              "typeString": "mapping(uint256 => struct Monster.Monster)"
+            },
+            "typeName": {
+              "id": 11,
+              "keyType": {
+                "id": 9,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "199:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "191:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Monster_$8_storage_$",
+                "typeString": "mapping(uint256 => struct Monster.Monster)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 10,
+                "name": "Monster",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 8,
+                "src": "207:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Monster_$8_storage_ptr",
+                  "typeString": "struct Monster.Monster"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "monstersCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 69,
+            "src": "266:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "266:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 26,
+            "name": "monsterNames",
+            "nodeType": "VariableDeclaration",
+            "scope": 69,
+            "src": "298:194:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+              "typeString": "string[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 15,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "298:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              },
+              "id": 16,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "298:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+                "typeString": "string[]"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "components": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "42756c626173617572",
+                  "id": 17,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "339:11:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_af906823ec456ec5c8508c982573185e074fe078c0c9cbba5830cc4d79279bf8",
+                    "typeString": "literal_string \"Bulbasaur\""
+                  },
+                  "value": "Bulbasaur"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "436861726d616e646572",
+                  "id": 18,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "360:12:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_0e97bcf45741f86ae0bb201089f7cb78b8393fc0238fdf420d92f385c5a1f0be",
+                    "typeString": "literal_string \"Charmander\""
+                  },
+                  "value": "Charmander"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "5371756972746c65",
+                  "id": 19,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "382:10:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_4b83a729ba33363605b2d06b75f0ae0be4068e5f51e4c6e56fccd4212cb52008",
+                    "typeString": "literal_string \"Squirtle\""
+                  },
+                  "value": "Squirtle"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "50696b61636875",
+                  "id": 20,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "402:9:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_67a24fc590102263470c68f1be8166f51584c4b3a225eeb68316cb11233efbae",
+                    "typeString": "literal_string \"Pikachu\""
+                  },
+                  "value": "Pikachu"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "4361746572706965",
+                  "id": 21,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "421:10:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_e9ff286f5631c0f248f5700d7cac11958a602e696ae6bc09a2e716e816efae8f",
+                    "typeString": "literal_string \"Caterpie\""
+                  },
+                  "value": "Caterpie"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "576565646c65",
+                  "id": 22,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "441:8:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_1f065b4d514add97f3319670d84d4827385d11ce65ba038a4f20571eea847c84",
+                    "typeString": "literal_string \"Weedle\""
+                  },
+                  "value": "Weedle"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "506964676579",
+                  "id": 23,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "459:8:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_85ff7758a8d5f6194fc63d41882ec9f227ab5713a8a5f10c2334dcb9aea87c87",
+                    "typeString": "literal_string \"Pidgey\""
+                  },
+                  "value": "Pidgey"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "52617474617461",
+                  "id": 24,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "477:9:0",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_1a24b5d165b8bfd54412ec13df699a56ae31d62c44ba6116473b623a6d256b7e",
+                    "typeString": "literal_string \"Rattata\""
+                  },
+                  "value": "Rattata"
+                }
+              ],
+              "id": 25,
+              "isConstant": false,
+              "isInlineArray": true,
+              "isLValue": false,
+              "isPure": true,
+              "lValueRequested": false,
+              "nodeType": "TupleExpression",
+              "src": "329:163:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_string_memory_$8_memory_ptr",
+                "typeString": "string memory[8] memory"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 48,
+              "nodeType": "Block",
+              "src": "521:115:0",
+              "statements": [
+                {
+                  "body": {
+                    "id": 46,
+                    "nodeType": "Block",
+                    "src": "578:52:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 41,
+                                "name": "monsterNames",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 26,
+                                "src": "603:12:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                                  "typeString": "string storage ref[] storage ref"
+                                }
+                              },
+                              "id": 43,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 42,
+                                "name": "i",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 30,
+                                "src": "616:1:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "603:15:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_string_storage",
+                                "typeString": "string storage ref"
+                              }
+                            ],
+                            "id": 40,
+                            "name": "addMonster",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 68,
+                            "src": "592:10:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$returns$__$",
+                              "typeString": "function (string memory)"
+                            }
+                          },
+                          "id": 44,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "592:27:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 45,
+                        "nodeType": "ExpressionStatement",
+                        "src": "592:27:0"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 33,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 30,
+                      "src": "548:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 34,
+                        "name": "monsterNames",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 26,
+                        "src": "552:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+                          "typeString": "string storage ref[] storage ref"
+                        }
+                      },
+                      "id": 35,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "552:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "548:23:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 47,
+                  "initializationExpression": {
+                    "assignments": [
+                      30
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 30,
+                        "name": "i",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "535:6:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 29,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "535:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 32,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 31,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "544:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "535:10:0"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "574:3:0",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 37,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 30,
+                        "src": "574:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 39,
+                    "nodeType": "ExpressionStatement",
+                    "src": "574:3:0"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "531:99:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 49,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "511:2:0"
+            },
+            "returnParameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "521:0:0"
+            },
+            "scope": 69,
+            "src": "499:137:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 67,
+              "nodeType": "Block",
+              "src": "692:101:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "702:16:0",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 54,
+                      "name": "monstersCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "702:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "702:16:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 65,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 57,
+                        "name": "monsters",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12,
+                        "src": "728:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Monster_$8_storage_$",
+                          "typeString": "mapping(uint256 => struct Monster.Monster storage ref)"
+                        }
+                      },
+                      "id": 59,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "monstersCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 14,
+                        "src": "737:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "728:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Monster_$8_storage",
+                        "typeString": "struct Monster.Monster storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 61,
+                          "name": "monstersCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 14,
+                          "src": "762:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 62,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51,
+                          "src": "777:5:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 63,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "784:1:0",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          }
+                        ],
+                        "id": 60,
+                        "name": "Monster",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "754:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Monster_$8_storage_ptr_$",
+                          "typeString": "type(struct Monster.Monster storage pointer)"
+                        }
+                      },
+                      "id": 64,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "754:32:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Monster_$8_memory",
+                        "typeString": "struct Monster.Monster memory"
+                      }
+                    },
+                    "src": "728:58:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Monster_$8_storage",
+                      "typeString": "struct Monster.Monster storage ref"
+                    }
+                  },
+                  "id": 66,
+                  "nodeType": "ExpressionStatement",
+                  "src": "728:58:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 68,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addMonster",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 68,
+                  "src": "663:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "663:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "662:21:0"
+            },
+            "returnParameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "692:0:0"
+            },
+            "scope": 69,
+            "src": "642:151:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "private"
+          }
+        ],
+        "scope": 70,
+        "src": "34:761:0"
+      }
+    ],
+    "src": "0:795:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Monster.sol",
+      "exportedSymbols": {
+        "Monster": [
+          69
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.8",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            69
+          ],
+          "name": "Monster",
+          "scope": 70
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Monster.Monster",
+              "name": "Monster",
+              "scope": 69,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "105:4:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "105:7:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "name",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "122:6:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "122:11:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "age",
+                  "scope": 8,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 6,
+                    "name": "ElementaryTypeName",
+                    "src": "143:4:0"
+                  }
+                ],
+                "id": 7,
+                "name": "VariableDeclaration",
+                "src": "143:8:0"
+              }
+            ],
+            "id": 8,
+            "name": "StructDefinition",
+            "src": "80:78:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "monsters",
+              "scope": 69,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct Monster.Monster)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct Monster.Monster)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 9,
+                    "name": "ElementaryTypeName",
+                    "src": "199:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Monster",
+                      "referencedDeclaration": 8,
+                      "type": "struct Monster.Monster"
+                    },
+                    "id": 10,
+                    "name": "UserDefinedTypeName",
+                    "src": "207:7:0"
+                  }
+                ],
+                "id": 11,
+                "name": "Mapping",
+                "src": "191:24:0"
+              }
+            ],
+            "id": 12,
+            "name": "VariableDeclaration",
+            "src": "191:40:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "monstersCount",
+              "scope": 69,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 13,
+                "name": "ElementaryTypeName",
+                "src": "266:4:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "266:25:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "monsterNames",
+              "scope": 69,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string[]",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "string[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 15,
+                    "name": "ElementaryTypeName",
+                    "src": "298:6:0"
+                  }
+                ],
+                "id": 16,
+                "name": "ArrayTypeName",
+                "src": "298:8:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isInlineArray": true,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "type": "string memory[8] memory"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "42756c626173617572",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Bulbasaur\"",
+                      "value": "Bulbasaur"
+                    },
+                    "id": 17,
+                    "name": "Literal",
+                    "src": "339:11:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "436861726d616e646572",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Charmander\"",
+                      "value": "Charmander"
+                    },
+                    "id": 18,
+                    "name": "Literal",
+                    "src": "360:12:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "5371756972746c65",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Squirtle\"",
+                      "value": "Squirtle"
+                    },
+                    "id": 19,
+                    "name": "Literal",
+                    "src": "382:10:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "50696b61636875",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Pikachu\"",
+                      "value": "Pikachu"
+                    },
+                    "id": 20,
+                    "name": "Literal",
+                    "src": "402:9:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "4361746572706965",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Caterpie\"",
+                      "value": "Caterpie"
+                    },
+                    "id": 21,
+                    "name": "Literal",
+                    "src": "421:10:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "576565646c65",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Weedle\"",
+                      "value": "Weedle"
+                    },
+                    "id": 22,
+                    "name": "Literal",
+                    "src": "441:8:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "506964676579",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Pidgey\"",
+                      "value": "Pidgey"
+                    },
+                    "id": 23,
+                    "name": "Literal",
+                    "src": "459:8:0"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "52617474617461",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"Rattata\"",
+                      "value": "Rattata"
+                    },
+                    "id": 24,
+                    "name": "Literal",
+                    "src": "477:9:0"
+                  }
+                ],
+                "id": 25,
+                "name": "TupleExpression",
+                "src": "329:163:0"
+              }
+            ],
+            "id": 26,
+            "name": "VariableDeclaration",
+            "src": "298:194:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 69,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 27,
+                "name": "ParameterList",
+                "src": "511:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 28,
+                "name": "ParameterList",
+                "src": "521:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "assignments": [
+                            30
+                          ]
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "i",
+                              "scope": 47,
+                              "stateVariable": false,
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "value": null,
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint",
+                                  "type": "uint256"
+                                },
+                                "id": 29,
+                                "name": "ElementaryTypeName",
+                                "src": "535:4:0"
+                              }
+                            ],
+                            "id": 30,
+                            "name": "VariableDeclaration",
+                            "src": "535:6:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 31,
+                            "name": "Literal",
+                            "src": "544:1:0"
+                          }
+                        ],
+                        "id": 32,
+                        "name": "VariableDeclarationStatement",
+                        "src": "535:10:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 30,
+                              "type": "uint256",
+                              "value": "i"
+                            },
+                            "id": 33,
+                            "name": "Identifier",
+                            "src": "548:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 26,
+                                  "type": "string storage ref[] storage ref",
+                                  "value": "monsterNames"
+                                },
+                                "id": 34,
+                                "name": "Identifier",
+                                "src": "552:12:0"
+                              }
+                            ],
+                            "id": 35,
+                            "name": "MemberAccess",
+                            "src": "552:19:0"
+                          }
+                        ],
+                        "id": 36,
+                        "name": "BinaryOperation",
+                        "src": "548:23:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 30,
+                                  "type": "uint256",
+                                  "value": "i"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "574:1:0"
+                              }
+                            ],
+                            "id": 38,
+                            "name": "UnaryOperation",
+                            "src": "574:3:0"
+                          }
+                        ],
+                        "id": 39,
+                        "name": "ExpressionStatement",
+                        "src": "574:3:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "tuple()",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_string_storage",
+                                          "typeString": "string storage ref"
+                                        }
+                                      ],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 68,
+                                      "type": "function (string memory)",
+                                      "value": "addMonster"
+                                    },
+                                    "id": 40,
+                                    "name": "Identifier",
+                                    "src": "592:10:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "string storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 26,
+                                          "type": "string storage ref[] storage ref",
+                                          "value": "monsterNames"
+                                        },
+                                        "id": 41,
+                                        "name": "Identifier",
+                                        "src": "603:12:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 30,
+                                          "type": "uint256",
+                                          "value": "i"
+                                        },
+                                        "id": 42,
+                                        "name": "Identifier",
+                                        "src": "616:1:0"
+                                      }
+                                    ],
+                                    "id": 43,
+                                    "name": "IndexAccess",
+                                    "src": "603:15:0"
+                                  }
+                                ],
+                                "id": 44,
+                                "name": "FunctionCall",
+                                "src": "592:27:0"
+                              }
+                            ],
+                            "id": 45,
+                            "name": "ExpressionStatement",
+                            "src": "592:27:0"
+                          }
+                        ],
+                        "id": 46,
+                        "name": "Block",
+                        "src": "578:52:0"
+                      }
+                    ],
+                    "id": 47,
+                    "name": "ForStatement",
+                    "src": "531:99:0"
+                  }
+                ],
+                "id": 48,
+                "name": "Block",
+                "src": "521:115:0"
+              }
+            ],
+            "id": 49,
+            "name": "FunctionDefinition",
+            "src": "499:137:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addMonster",
+              "scope": 69,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_name",
+                      "scope": 68,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 50,
+                        "name": "ElementaryTypeName",
+                        "src": "663:6:0"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "VariableDeclaration",
+                    "src": "663:19:0"
+                  }
+                ],
+                "id": 52,
+                "name": "ParameterList",
+                "src": "662:21:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 53,
+                "name": "ParameterList",
+                "src": "692:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 14,
+                              "type": "uint256",
+                              "value": "monstersCount"
+                            },
+                            "id": 54,
+                            "name": "Identifier",
+                            "src": "702:13:0"
+                          }
+                        ],
+                        "id": 55,
+                        "name": "UnaryOperation",
+                        "src": "702:16:0"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "ExpressionStatement",
+                    "src": "702:16:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct Monster.Monster storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct Monster.Monster storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 12,
+                                  "type": "mapping(uint256 => struct Monster.Monster storage ref)",
+                                  "value": "monsters"
+                                },
+                                "id": 57,
+                                "name": "Identifier",
+                                "src": "728:8:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 14,
+                                  "type": "uint256",
+                                  "value": "monstersCount"
+                                },
+                                "id": 58,
+                                "name": "Identifier",
+                                "src": "737:13:0"
+                              }
+                            ],
+                            "id": 59,
+                            "name": "IndexAccess",
+                            "src": "728:23:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct Monster.Monster memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 8,
+                                  "type": "type(struct Monster.Monster storage pointer)",
+                                  "value": "Monster"
+                                },
+                                "id": 60,
+                                "name": "Identifier",
+                                "src": "754:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 14,
+                                  "type": "uint256",
+                                  "value": "monstersCount"
+                                },
+                                "id": 61,
+                                "name": "Identifier",
+                                "src": "762:13:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 51,
+                                  "type": "string memory",
+                                  "value": "_name"
+                                },
+                                "id": 62,
+                                "name": "Identifier",
+                                "src": "777:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 63,
+                                "name": "Literal",
+                                "src": "784:1:0"
+                              }
+                            ],
+                            "id": 64,
+                            "name": "FunctionCall",
+                            "src": "754:32:0"
+                          }
+                        ],
+                        "id": 65,
+                        "name": "Assignment",
+                        "src": "728:58:0"
+                      }
+                    ],
+                    "id": 66,
+                    "name": "ExpressionStatement",
+                    "src": "728:58:0"
+                  }
+                ],
+                "id": 67,
+                "name": "Block",
+                "src": "692:101:0"
+              }
+            ],
+            "id": 68,
+            "name": "FunctionDefinition",
+            "src": "642:151:0"
+          }
+        ],
+        "id": 69,
+        "name": "ContractDefinition",
+        "src": "34:761:0"
+      }
+    ],
+    "id": 70,
+    "name": "SourceUnit",
+    "src": "0:795:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x366EEe7d0b6c5D6333b4E969b3439E66CE6809F7",
+      "transactionHash": "0xc53e8ac79c83da32f1652937b07b1074494cc8c51c6ee9a4ef797672b3d5dd9f"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-15T00:56:52.003Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
