@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.8.0;
+pragma solidity >=0.4.22 <0.8.8;
 
 contract Purchase {
     address[16] public purchasers;
