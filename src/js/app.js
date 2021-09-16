@@ -49,35 +49,35 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('Adoption.json', function(data) {
+    $.getJSON('Purchase.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var AdoptionArtifact = data;
-      App.contracts.Adoption = TruffleContract(AdoptionArtifact);
+      var PurchaseArtifact = data;
+      App.contracts.Purchase = TruffleContract(PurchaseArtifact);
     
       // Set the provider for our contract
-      App.contracts.Adoption.setProvider(App.web3Provider);
+      App.contracts.Purchase.setProvider(App.web3Provider);
     
       // Use our contract to retrieve and mark the adopted pets
-      return App.markAdopted();
+      return App.markPurchased();
     });
 
     return App.bindEvents();
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-adopt', App.handlePurchase);
   },
 
-  markAdopted: function() {
-    var adoptionInstance;
+  markPurchased: function() {
+    var purchaseInstance;
 
-    App.contracts.Adoption.deployed().then(function(instance) {
-      adoptionInstance = instance;
+    App.contracts.Purchase.deployed().then(function(instance) {
+      purchaseInstance = instance;
 
-      return adoptionInstance.getAdopters.call();
-    }).then(function(adopters) {
-      for (i = 0; i < adopters.length; i++) {
-        if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+      return purchaseInstance.getPurchasers.call();
+    }).then(function(purchasers) {
+      for (i = 0; i < purchasers.length; i++) {
+        if (purchasers[i] !== '0x0000000000000000000000000000000000000000') {
           $('.panel-pet').eq(i).find('button').text('Dimiliki').attr('disabled', true);
         }
       }
@@ -86,12 +86,12 @@ App = {
     });
   },
 
-  handleAdopt: function(event) {
+  handlePurchase: function(event) {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
 
-    var adoptionInstance;
+    var purchaseInstance;
 
     web3.eth.getAccounts(function(error, accounts) {
       if (error) {
@@ -100,13 +100,13 @@ App = {
 
       var account = accounts[0];
 
-      App.contracts.Adoption.deployed().then(function(instance) {
-        adoptionInstance = instance;
+      App.contracts.Purchase.deployed().then(function(instance) {
+        purchaseInstance = instance;
 
-        // Execute adopt as a transaction by sending account
-        return adoptionInstance.adopt(petId, {from: account});
+        // Execute purchase as a transaction by sending account
+        return purchaseInstance.purchase(petId, {from: account});
       }).then(function(result) {
-        return App.markAdopted();
+        return App.markPurchased();
       }).catch(function(err) {
         console.log(err.message);
       });
