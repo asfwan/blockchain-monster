@@ -1,0 +1,90 @@
+[
+  {
+    "id": 0,
+    "name": "Ratna",
+    "picture": "images/konflix_chars/3_Ratna_Sad.png",
+    "age": 21,
+    "breed": "Sedih",
+    "location": "New Delhi, IN"
+  },
+  {
+    "id": 1,
+    "name": "Raja Johan",
+    "picture": "images/konflix_chars/2_Johan_Angry.png",
+    "age": 31,
+    "breed": "Marah",
+    "location": "Virginia, AU"
+  },
+  {
+    "id": 2,
+    "name": "Inang",
+    "picture": "images/konflix_chars/4_Inang_Shock.png",
+    "age": 20,
+    "breed": "Terkejut",
+    "location": "Perak, MY"
+  },
+  {
+    "id": 3,
+    "name": "Indera",
+    "picture": "images/konflix_chars/1_Indera_Simple.png",
+    "age": 32,
+    "breed": "Biasa",
+    "location": "Woodlands, SG"
+  },
+  {
+    "id": 4,
+    "name": "Megat",
+    "picture": "images/konflix_chars/5_Megat_Smile_A.png",
+    "age": 26,
+    "breed": "Senyum",
+    "location": "California, US"
+  },
+  {
+    "id": 5,
+    "name": "Bongsu",
+    "picture": "images/konflix_chars/2_Bongsu_Angry.png",
+    "age": 19,
+    "breed": "Marah",
+    "location": "Sumatera, ID"
+  },
+  {
+    "id": 6,
+    "name": "Hitam",
+    "picture": "images/konflix_chars/1_Hitam_Simple.png",
+    "age": 23,
+    "breed": "Biasa",
+    "location": "Tokyo, JP"
+  },
+  {
+    "id": 7,
+    "name": "Jeneral Musa",
+    "picture": "images/konflix_chars/2_Musa_Angry.png",
+    "age": 33,
+    "breed": "Marah",
+    "location": "Johor, MY"
+  },
+  {
+    "id": 8,
+    "name": "Dato Adding",
+    "picture": "images/konflix_chars/2_Adding_Angry.png",
+    "age": 22,
+    "breed": "Marah",
+    "location": "Bayawan, PH"
+  },
+  {
+    "id": 9,
+    "name": "Leftenan Kemal",
+    "picture": "images/konflix_chars/3_Kemal_Sad.png",
+    "age": 43,
+    "breed": "Sedih",
+    "location": "Sarawak, MY"
+  },
+  {
+    "id": 10,
+    "name": "Leftenan Meru",
+    "picture": "images/konflix_chars/4_Meru_Shock.png",
+    "age": 52,
+    "breed": "Terkejut",
+    "location": "Medan, ID"
+  }
+]
